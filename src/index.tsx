@@ -9,6 +9,9 @@ import AniIponeCam from "./AniIponeCam";
 import AniDrag from "./AniDrag";
 import AniMotionValue from "./AniMotionValue";
 import ModalAni from "./ModalAni";
+import SliderAni from "./SliderAni";
+import LayoutId from "./LayoutId";
+import App from "./App";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -76,7 +79,7 @@ ReactDOM.render(
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <ModalAni />
+        <App />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
