@@ -2,8 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { RecoilRoot } from "recoil";
-import App from "./App";
 import { darkTheme } from "./theme";
+import SvgAnimation from "./SvgAnimation";
+import Animation1 from "./Animation1";
+import AniIponeCam from "./AniIponeCam";
+import AniDrag from "./AniDrag";
+import AniMotionValue from "./AniMotionValue";
+import ModalAni from "./ModalAni";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -55,7 +60,7 @@ table {
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: linear-gradient(135deg,#e09,#d0e);
+  background: linear-gradient(135deg, #e09, #d0e);
   color: black;
 	line-height: 1.2;
 	font-weight: 300;
@@ -71,7 +76,7 @@ ReactDOM.render(
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <App />
+        <ModalAni />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
